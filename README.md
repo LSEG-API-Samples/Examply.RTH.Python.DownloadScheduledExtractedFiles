@@ -6,29 +6,33 @@ Data can be extracted through either of two basic mechanisms. The first one is S
 
 Typically, users can use the DSS web GUI to download extraction files created by scheduled extractions via the DSS web GUI. This postman collection shows the steps to use the DSS REST API to download the last extraction files created by scheduled extractions.
 
+##Usage##
+
 ```
 Usage: DownloadScheduledExtractedFiles_python.py [-u dss_username] [-p dss_password] [-s schedule_name] [-f file type
 (all, note, ric, data) ] [-x] [--help]
 ```
 
-1. List all available scheduled extractions
+##Sample Usages##
+
+**1. List all available scheduled extractions**
 
 ```
  DownloadScheduledExtractedFiles_python.py -u <dss_username> -p <dss_password>
 ```
 
-2. Download all files of the last completed extraction by a schedule name
+**2. Download all files of the last completed extraction by a schedule name**
 
 ```
  DownloadScheduledExtractedFiles_python.py -u <dss_username> -p <dss_password> -s <schedule name>
 ```
-3. Download a note file of the last completed extraction by a schedule name
+**3. Download a note file of the last completed extraction by a schedule name**
 
 ```
  DownloadScheduledExtractedFiles_python.py -u <dss_username> -p <dss_password> -s <schedule name> -f note
 ```
 
-4. Download a data file of the last completed extraction by a schedule name from AWS
+**4. Download a data file of the last completed extraction by a schedule name from AWS**
 
 ```
  DownloadScheduledExtractedFiles_python.py -u <dss_username> -p <dss_password> -s <schedule name> -f data -x

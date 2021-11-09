@@ -6,6 +6,8 @@ Data can be extracted through either of two basic mechanisms. The first one is S
 
 Typically, users can use the DSS web GUI to download extraction files created by scheduled extractions via the DSS web GUI. This Python example shows the steps to use the DSS REST API to download the last extraction files created by scheduled extractions.
 
+For more information, please refer to [DSS REST API: Downloading Completed Extraction Files by a Schedule Name](https://developers.refinitiv.com/en/article-catalog/article/dss-rest-api--downloading-completed-extraction-files-by-a-schedu).
+
 ## Usage
 
 ```
